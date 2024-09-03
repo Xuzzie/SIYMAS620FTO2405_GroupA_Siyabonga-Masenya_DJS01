@@ -13,7 +13,7 @@ const initialDistance = 0; // distance (km)
 const initialFuel = 5000; // remaining initialFuel (kg)
 const fuelBurnRate = 0.5; // initialFuel burn rate (kg/s)
 
-const newDistance = initialDistance + initialVelocity * timeInSeconds; //calcultes new distance
+const newDistance = initialDistance + initialVelocity * (timeInSeconds / 3600); //calcultes new distance
 const remainingFuel = initialFuel - fuelBurnRate * timeInSeconds; //calculates remaining initialFuel
 const newVelocity = calcNewVel(Acceleration, initialVelocity, timeInSeconds); //calculates new velocity based on acceleration
 
